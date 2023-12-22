@@ -1,9 +1,6 @@
 # Sprint-Project
 
-## Discord.js (V 0.0.1)
+## 2023.12.23 ~ 2024.01.19 Comment Education
 
-1. Sprint Project 제작 기간 2023 / 12 / 10 ~  
-    App.js => Main Discord Bot OnReady
-2. Fix Note  
-    * ClientId => BotId
-    * GuildId => ServerId
+1. 1Week Education  
+    * UserProfile WebPage Home
