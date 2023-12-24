@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 1Week Display */
+#header_Container {
+    display: inline-block;
+}
+
+#nav_Container {
+    display: inline;
+}
+
+#sec_Container {
+    display: flex;
+}
+
+#footer_Container {
+    display: grid;
+}
