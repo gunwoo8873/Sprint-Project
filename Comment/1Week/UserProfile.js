@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // nav MainTitle and UserProfileImage
     const nav_SpanElements = new all_Elements('nav_maintitle');
     const nav_span = [
-        {id : "maintitle", name : "Choigunwoo<br>Userprofile"}
+        { id : "maintitle", name : "Choigunwoo<br>Userprofile" }
     ]
     nav_span.forEach(function (SpanElement) {
         nav_SpanElements.addspan(SpanElement.id, SpanElement.name)
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const nav_imgElements = new all_Elements('nav_userimage');
     const nav_img = [
-        {id : "userimage", src : "./Images/Github_UserProfile.png"}
+        { id : "userimage", src : "./Images/Github_UserProfile.png" }
     ]
     nav_img.forEach(function (ImgElement) {
         nav_imgElements.addimg(ImgElement.id, ImgElement.src)
