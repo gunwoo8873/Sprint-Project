@@ -26,10 +26,6 @@ class all_Elements {
         Img.classList.add(`img`, imgClass)
         this.div_id.appendChild(Img)
     }
-
-    addskillset(skillsetclass, skill_color) {
-        const skill = document.createElement(`box`)
-    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -39,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { id: "sprint", name: "SPRINT PROJECT", link: "#" },
         { id: "profile", name: "USER PROFILE", link: "#" },
         { id: "github", name: "GITHUB", link: "https://github.com/gunwoo8873/Sprint-Project.git" },
-        { id: "docker", name: "DOCKER HUB", link: "#" },
+        { id: "docker", name: "DOCKER HUB", link: "https://hub.docker.com/repository/docker/choigunwoo/sprint-project/general" },
         { id: "null_name", name: "NULL", link: "#" }
     ]
 
@@ -73,13 +69,4 @@ document.addEventListener("DOMContentLoaded", function() {
     nav_img.forEach(function (ImgElement) {
         nav_imgElements.addimg(ImgElement.id, ImgElement.src)
     })
-
-    const sec_skillElements = new all_Elements('sec_userskill');
-    const sec_skill = [
-        {id : "html", class : "html", name : "HTML"},
-        {id : "javascript", class : "javascript", name : "JavaScript"},
-        {id : "java", class : "java", name : "Java"},
-        {id : "c", class : "c", name : "C"},
-        {id : "docker", class : "docker", name : "Docker"}
-    ]
 })

@@ -50,9 +50,11 @@ a{ text-decoration: none; }
     gap: 60px;
     background-color: gray;
 }
+
 #sec_skilltitle { font-size: 60px; font-weight: 600; }
-#sec_userskill span{ font-size: 20px; font-weight: 400; }
-.skillbar { background-color: gray; width: 960px; height: 32px; }
+#sec_userskill span{ font-size: 20px; font-weight: 400; color: black;}
+
+.skillbar { background-color: black; width: 960px; height: 32px; }
 #html { background-color: green; width: 60%; height: 32px; }
 #javascript { background-color: green; width: 60%; height: 32px; }
 #java { background-color: orange; width: 50%; height: 32px;}
