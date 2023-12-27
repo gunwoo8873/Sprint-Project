@@ -3,38 +3,42 @@ class all_Elements {
         this.div_id = document.getElementById(divId)
     }
 
-    addButton(buttonClass, text, link) {
-        const Button = document.createElement("button")
+    addButton(buttonclass, text, link) {
+        const Button = document.createElement(`button`)
         Button.textContent = text
-        Button.classList.add(`button`, buttonClass)
+        Button.classList.add(buttonclass)
         Button.addEventListener("click", function() {
             window.location.href = link
         })
         this.div_id.appendChild(Button)
     }
 
-    addspan(spanClass, text) {
-        const Span = document.createElement("span")
-        Span.textContent = text
+    addspan(spanClass, htmlContnet) {
+        const Span = document.createElement(`span`)
+        Span.innerHTML = htmlContnet
         Span.classList.add(`span`, spanClass)
         this.div_id.appendChild(Span)
     }
 
     addimg(imgClass, src) {
-        const Img = document.createElement("img")
+        const Img = document.createElement(`img`)
         Img.src = src
         Img.classList.add(`img`, imgClass)
         this.div_id.appendChild(Img)
     }
+
+    addskillset(skillsetclass, skill_color) {
+        const skill = document.createElement(`box`)
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-
+    // Head Menu Buttons
     const head_MenuElements = new all_Elements('head_menu');
     const head_Menu = [
         { id: "sprint", name: "SPRINT PROJECT", link: "#" },
         { id: "profile", name: "USER PROFILE", link: "#" },
-        { id: "github", name: "GITHUB", link: "#" },
+        { id: "github", name: "GITHUB", link: "https://github.com/gunwoo8873/Sprint-Project.git" },
         { id: "docker", name: "DOCKER HUB", link: "#" },
         { id: "null_name", name: "NULL", link: "#" }
     ]
@@ -53,8 +57,29 @@ document.addEventListener("DOMContentLoaded", function() {
         head_LoginElements.addButton(ButtonElement.id, ButtonElement.name, ButtonElement.link)
     })
 
-    const nav_SpanElements = new all_Elements('nav_span');
+    // nav MainTitle and UserProfileImage
+    const nav_SpanElements = new all_Elements('nav_maintitle');
     const nav_span = [
-        {id : "maintitle", name : "Choigunwoo Userprofile"}
+        {id : "maintitle", name : "Choigunwoo<br>Userprofile"}
+    ]
+    nav_span.forEach(function (SpanElement) {
+        nav_SpanElements.addspan(SpanElement.id, SpanElement.name)
+    })
+
+    const nav_imgElements = new all_Elements('nav_userimage');
+    const nav_img = [
+        {id : "userimage", src : "./Images/Github_UserProfile.png"}
+    ]
+    nav_img.forEach(function (ImgElement) {
+        nav_imgElements.addimg(ImgElement.id, ImgElement.src)
+    })
+
+    const sec_skillElements = new all_Elements('sec_userskill');
+    const sec_skill = [
+        {id : "html", class : "html", name : "HTML"},
+        {id : "javascript", class : "javascript", name : "JavaScript"},
+        {id : "java", class : "java", name : "Java"},
+        {id : "c", class : "c", name : "C"},
+        {id : "docker", class : "docker", name : "Docker"}
     ]
 })

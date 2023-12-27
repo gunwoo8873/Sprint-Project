@@ -1,34 +1,60 @@
-* {
+body{
+    font-family: "Noto Sans KR",Roboto,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif,"Apple Color Emoji","Twemoji Country Flags";
     margin: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+    background-color: white;
 }
+a{ text-decoration: none; }
+::-webkit-scrollbar { width: 4px; border: 1px solid #d5d5d5; }
 
-#header_Contents {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-}
-
-#header_Contents .button {
-    height: 50px;
-}
-
-#nav_Contents {
-    font-family: 'Anton', sans-serif;
+#header_Contaainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 900px;
+    height: 40px;
+    gap: 100px;
 }
+#header_Contaainer button { height: 40px; border: none; font-size: 15px; font-weight: 800;}
 
-#nav_maintitle {
-    font-size: 80px;
-}
+/* Top Left Menu Button Element */
+#head_menu button {background-color: white;}
+#head_menu button:hover { background-color: darkblue; color: white; }
 
-#nav_userimage {
-    border-radius: 100%;
-    border: 1px black solid;
-    background-image: url(./Images/Github_UserProfile.png);
+/* Top Right Login Button Element*/
+#head_login button { margin-inline: 5px; border-radius: 5px;}
+#head_login .signin { background-color: black; color: white;}
+#head_login .signin:hover { background-color: gray; color: white; }
+#head_login .signup { background-color: red; color: white; border: 1px solid red;}
+#head_login .signup:hover { background-color: white; color: black; border: 1px solid red;}
+
+#nav_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    padding-bottom: 120px;
+    gap: 60px;
 }
+/* Nav UserName and MainTitle */
+#nav_maintitle span { font-size: 80px; font-weight: 600; }
+/* Nav UserProfile Image */
+#nav_userimage img { height: 400px; border-radius: 100%; }
+
+/* Sec User UsedSkill Info*/
+#sec_Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1020px;
+    gap: 60px;
+    background-color: gray;
+}
+#sec_skilltitle { font-size: 60px; font-weight: 600; }
+#sec_userskill span{ font-size: 20px; font-weight: 400; }
+.skillbar { background-color: gray; width: 960px; height: 32px; }
+#html { background-color: green; width: 60%; height: 32px; }
+#javascript { background-color: green; width: 60%; height: 32px; }
+#java { background-color: orange; width: 50%; height: 32px;}
+#c { background-color: orange; width: 40%; height: 32px; }
+#docker { background-color: red; width: 20%; height: 32px; }
