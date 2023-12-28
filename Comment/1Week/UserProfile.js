@@ -36,9 +36,8 @@ document.addEventListener("DOMContentLoaded", function() {
         { id: "profile", name: "USER PROFILE", link: "#" },
         { id: "github", name: "GITHUB", link: "https://github.com/gunwoo8873/Sprint-Project.git" },
         { id: "docker", name: "DOCKER HUB", link: "https://hub.docker.com/repository/docker/choigunwoo/sprint-project/general" },
-        { id: "null_name", name: "NULL", link: "#" }
+        { id: "cloen", name: "Cloen Web", link: "../Clone Web/index.html" }
     ]
-
     head_Menu.forEach(function (ButtonElement) {
         head_MenuElements.addButton(ButtonElement.id, ButtonElement.name, ButtonElement.link)
     })
@@ -48,18 +47,17 @@ document.addEventListener("DOMContentLoaded", function() {
         { id: "signin", name: "SIGN IN", link: "#" },
         { id: "signup", name: "SIGN UP FOR FREE", link: "#" }
     ]
-
     head_Login.forEach(function (ButtonElement) {
         head_LoginElements.addButton(ButtonElement.id, ButtonElement.name, ButtonElement.link)
     })
 
     // nav MainTitle and UserProfileImage
-    const nav_SpanElements = new all_Elements('nav_maintitle');
-    const nav_span = [
+    const nav_TitleElements = new all_Elements('nav_maintitle');
+    const nav_MainTitle = [
         { id : "maintitle", name : "Choigunwoo<br>Userprofile" }
     ]
-    nav_span.forEach(function (SpanElement) {
-        nav_SpanElements.addspan(SpanElement.id, SpanElement.name)
+    nav_MainTitle.forEach(function (SpanElement) {
+        nav_TitleElements.addspan(SpanElement.id, SpanElement.name)
     })
 
     const nav_imgElements = new all_Elements('nav_userimage');
@@ -69,4 +67,5 @@ document.addEventListener("DOMContentLoaded", function() {
     nav_img.forEach(function (ImgElement) {
         nav_imgElements.addimg(ImgElement.id, ImgElement.src)
     })
+    
 })
