@@ -1,17 +1,23 @@
-body{
+body {
     font-family: "Noto Sans KR",Roboto,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif,"Apple Color Emoji","Twemoji Country Flags";
     margin: 0px;
     background-color: white;
+    /* <a href="https://www.flaticon.com/kr/free-icons/-" title="마우스 커서 아이콘">마우스 커서 아이콘  제작자: Fathema Khanom - Flaticon</a> */
 }
-a{ text-decoration: none; }
+a { text-decoration: none; }
 ::-webkit-scrollbar { width: 4px; border: 1px solid #d5d5d5; }
-
+.custom-cursor {
+    cursor: url('./Images/free-icon-mouse-cursor-5993123.png'), auto;
+}
 #header_Contaainer {
+    top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 50px;
     gap: 100px;
+    background-color: white;
+    overflow: hidden;
 }
 #header_Contaainer button { height: 40px; border: none; font-size: 15px; font-weight: 800;}
 
@@ -20,7 +26,7 @@ a{ text-decoration: none; }
 #head_menu button:hover { background-color: darkblue; color: white; }
 
 /* Top Right Login Button Element*/
-#head_login button { margin-inline: 5px; border-radius: 5px;}
+#head_login button { margin-inline: 5px; border-radius: 5px; position: sticky;}
 #head_login .signin { background-color: black; color: white;}
 #head_login .signin:hover { background-color: gray; color: white; }
 #head_login .signup { background-color: red; color: white; border: 1px solid red;}
@@ -31,7 +37,7 @@ a{ text-decoration: none; }
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 800px;
+    height: 1080px;
     padding-bottom: 120px;
     gap: 60px;
 }
@@ -41,22 +47,29 @@ a{ text-decoration: none; }
 #nav_userimage img { height: 400px; border-radius: 100%; }
 
 /* Sec User UsedSkill Info*/
-#sec_Container {
+#sec_ContainerA {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1020px;
+    height: 1080px;
     gap: 60px;
     background-color: gray;
 }
+#sec_skillList { font-size: 60px; font-weight: bolder; margin: 5px; }
+.sec_SkillName { font-size: 25px; font-weight: bolder; }
+.sec_SkillBar { width: 800px; height: 35px; background-color: white; border-radius: 5px; }
+#html { width: 60%; height: 35px; background-color: blue; border-radius: 5px; text-align: end; font-weight: bolder; }
+#javascirpt { width: 60%; height: 35px; background-color: blue; border-radius: 5px; text-align: end; font-weight: bolder; }
+#java { width: 45%; height: 35px; background-color: yellow; border-radius: 5px; text-align: end; font-weight: bolder; }
+#c { width: 45%; height: 35px; background-color: yellow; border-radius: 5px; text-align: end; font-weight: bolder; }
+#docker { width: 20%; height: 35px; background-color: red; border-radius: 5px; text-align: end; font-weight: bolder; }
+#node { width: 40%; height: 35px; background-color: yellow; border-radius: 5px; text-align: end; font-weight: bolder; }
 
-#sec_skilltitle { font-size: 60px; font-weight: 600; }
-#sec_userskill span{ font-size: 20px; font-weight: 400; color: black;}
-
-.skillbar { background-color: black; width: 960px; height: 32px; }
-#html { background-color: green; width: 60%; height: 32px; }
-#javascript { background-color: green; width: 60%; height: 32px; }
-#java { background-color: orange; width: 50%; height: 32px;}
-#c { background-color: orange; width: 40%; height: 32px; }
-#docker { background-color: red; width: 20%; height: 32px; }
+#sec_ContainerB {
+    display: flex;
+    flex-direction: column;
+    height: 1020px;
+    align-items: center;
+    justify-content: center;
+}
