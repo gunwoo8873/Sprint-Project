@@ -6,9 +6,7 @@ body {
 }
 a { text-decoration: none; }
 ::-webkit-scrollbar { width: 4px; border: 1px solid #d5d5d5; }
-.custom-cursor {
-    cursor: url('./Images/free-icon-mouse-cursor-5993123.png'), auto;
-}
+
 #header_Contaainer {
     position: sticky;
     top: 0px;
@@ -58,9 +56,11 @@ a { text-decoration: none; }
     gap: 60px;
     background-color: #F4F5F9;
 }
-#sec_skillList { font-size: 60px; font-weight: bolder; margin: 5px; }
-.sec_SkillName { font-size: 25px; font-weight: bolder; }
-.sec_SkillBar { width: 800px; height: 35px; background-color: white; border-radius: 5px; box-shadow: 1px 3px 16px 4px rgba(128, 128, 128, 0.3); }
+
+#A_skillList { font-size: 60px; font-weight: bolder; margin: 5px; }
+
+.A_SkillName { font-size: 25px; font-weight: bolder; }
+.A_SkillBar { width: 800px; height: 35px; background-color: white; border-radius: 5px; box-shadow: 1px 3px 16px 4px rgba(128, 128, 128, 0.3); }
 
 #html { width: 60%; height: 35px; background-color: blue; border-radius: 5px; text-align: end; font-weight: bolder; }
 #javascirpt { width: 60%; height: 35px; background-color: blue; border-radius: 5px; text-align: end; font-weight: bolder; }
