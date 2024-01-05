@@ -7,13 +7,18 @@ a { text-decoration: none; }
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@300;400&display=swap');
 
-#sec-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    align-items: center;
-}
+#sec-container { display: flex; flex-direction: row; }
 
-#atc_Calculator { border: 1px gray solid; width: 400px; height: 500px;}
+#atc_Calculator {
+    border: 1px solid gray; 
+    border-radius: 5%; 
+    width: 300px; 
+    height: 500px;
+}
+/** Calulator All Element */
+.Button_Number { display: flex; }
+.Number_Line, .Operator_Line2 { display: flex; flex-direction: column; }
+
 #Calculator_Head {}
-#Calculator_Box {}
+
+#BackSpace_img { width: 20px; height: 20px; align-items: center;}
