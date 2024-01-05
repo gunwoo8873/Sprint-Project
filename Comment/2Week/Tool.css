@@ -1,0 +1,19 @@
+* { box-sizing: border-box; margin: 0px; }
+body { width: 100%; }
+a { text-decoration: none; }
+/* ScrollBar*/
+::-webkit-scrollbar { width: 4px; border: 1px solid #d5d5d5; }
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@300;400&display=swap');
+
+#sec-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+
+#atc_Calculator { border: 1px gray solid; width: 400px; height: 500px;}
+#Calculator_Head {}
+#Calculator_Box {}
