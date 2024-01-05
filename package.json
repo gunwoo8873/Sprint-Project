@@ -6,11 +6,15 @@
     "http": "^0.0.1-security",
     "path": "^0.12.7",
     "react": "^18.2.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "ts": "^0.2.2"
   },
-  "scripts": {"dev": "nodemon"},
+  "scripts": {
+    "dev": "nodemon"
+  },
   "devDependencies": {
     "nodemon": "^3.0.2",
-    "tailwindcss": "^3.4.0"
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3"
   }
 }
