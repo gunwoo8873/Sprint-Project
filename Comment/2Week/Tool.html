@@ -7,39 +7,34 @@
     <link rel="stylesheet" href="./Tool.css">
 </head>
 <body>
-    <header id="head_Container">
-        <div id="head_MenuBar"></div>
-        <div id="head_LoginBar"></div>
-    </header>
     <section id="sec_Container">
-        <div id="sec_Notice">
-            <div id="Notice_ActionBar"></div>
-            <div id="Notice_Description">
-                <span>This Web Test</span>
-            </div>
-        </div>
-        <div id="sec_IconBar"></div>
-        <button type="button" id="sec_LeftButton"><</button>
         <article id="atc_Calendar"></article>
         <article id="atc_Calculator">
-            <div id="Calculator_Head"></div>
-            <div id="Calculator_Box"></div>
+            <div id="sec_IconBar">
+                <button type="button" id="Window_Low"><span>_</span></button>
+                <button type="button" id="Window_Hight">ㅁ</button>
+                <button type="button" id="Close">X</button>
+            </div>
+            <div id="Calculator_Box">
+                <p id="History"></p>
+                <p id="Formula"></p>
+            </div>
             <div id="Calculator_Button">
-                <div class="Button_Operator">
+                <div id="Button_Operator">
                     <div class="Operator_Line">
                         <button type="button" id="Percent" class="Operator">%</button> <!-- % -->
                         <button type="button" id="ClearEntry" class="Operator">CE</button> <!-- CE -->
                         <button type="reset" id="Clear" class="Operator">C</button> <!-- C -->
-                        <button type="button" id="BackSpace" class="Operator"><img src="./Images/backspace.png" alt="" id="BackSpace_img"></button> <!-- "" -->
+                        <button type="button" id="BackSpace" class="Operator">x</button> <!-- "" -->
                     </div>
                     <div class="Operator_Line">
                         <button type="button" id="Integral" class="Operator"><sup>1</sup>/x</button> <!-- 1/x -->
                         <button type="button" id="Square" class="Operator">x<sup>2</sup></button><!-- x<sup>2</sup> -->
                         <button type="button" id="Root" class="Operator"><sup>2</sup>√x</button> <!-- <sup>2</sup>√x -->
-                        <button type="button" id="Slash" class="Operator">&divide</button> <!-- &divide ÷ -->
+                        <button type="button" id="Slash" class="Operator">÷</button> <!-- &divide ÷ -->
                     </div>
                 </div>
-                <div class="Button_Number">
+                <div id="Button_Number">
                     <div class="Number_Line">
                         <button type="button" id="VII" class="Number">7</button> <!-- 7 -->
                         <button type="button" id="IV" class="Number">4</button><!-- 4 -->
@@ -69,7 +64,6 @@
             </div>
         </article>
         <article id="atc_FileDB"></article>
-        <button type="button" id="sec_RightButton">></button>
     </section>
 </body>
 </html>

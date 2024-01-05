@@ -1,24 +1,49 @@
 * { box-sizing: border-box; margin: 0px; }
-body { width: 100%; }
+body { height: 100%;}
 a { text-decoration: none; }
-/* ScrollBar*/
-::-webkit-scrollbar { width: 4px; border: 1px solid #d5d5d5; }
+button { font-family: sans-serif; font-weight: 600;}
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@300;400&display=swap');
 
-#sec-container { display: flex; flex-direction: row; }
+#sec_Container { display: flex; justify-content: center; align-items: center; padding-top: 150px;}
 
 #atc_Calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid gray; 
-    border-radius: 5%; 
+    border-radius: 5%;
     width: 300px; 
-    height: 500px;
+    height: 400px;
 }
-/** Calulator All Element */
-.Button_Number { display: flex; }
-.Number_Line, .Operator_Line2 { display: flex; flex-direction: column; }
 
-#Calculator_Head {}
+#sec_IconBar { display: flex; justify-content: right; align-content: end; padding-left: 200px;}
+#sec_IconBar span { text-align: center; }
+#sec_IconBar button { background-color: white; border: none; }
+#sec_IconBar :active { background-color: gray;}
 
-#BackSpace_img { width: 20px; height: 20px; align-items: center;}
+#Calculator_Box {
+    display: flex; 
+    flex-direction: column;
+    margin: 10px;
+    width: 250px; 
+    height: 75px;
+    border: 1px gray solid;
+}
+#Formula { width: 248px; height: 75px; }
+#History { width: 248px; height: 25px; }
+
+#Calculator_Button { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+#Calculator_Button button { width: 50px; height: 40px; border: 0.5px solid gray; border-radius: 4%;}
+
+.Operator_Line { display: flex; gap: 2px; margin: 2px; }
+.Operator_Line button { background-color: gray;}
+.Operator_Line :active { background-color: darkgray;}
+.Operator_Line2  button { background-color: gray;}
+.Operator_Line2 :active { background-color: darkgray;}
+
+#Button_Number { display: flex; flex-direction: row; gap: 2px;}
+.Number_Line, .Operator_Line2 { display: flex; flex-direction: column; gap: 2px;}
+.Number_Line :active { background-color: grey;}
