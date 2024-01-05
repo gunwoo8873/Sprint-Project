@@ -12,3 +12,9 @@ npm i package.json
     * Prifile WebPage
     * Side HTML5 and CSS3 Layout
         * Report (Github : Directory : 1Week/Report)
+2. Sub Sprint Project
+    * Game 
+    * Tool
+    * Calculator
+    * HTML5 and JavaScript
+        * Report (Github : Directory : 2Week/Report)
