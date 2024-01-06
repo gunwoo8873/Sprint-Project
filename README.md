@@ -12,9 +12,11 @@ npm i package.json
     * Prifile WebPage
     * Side HTML5 and CSS3 Layout
         * Report (Github : Directory : 1Week/Report)
+
+### 1Week Education 2023 . 12 . 30 (`Sat`) ~ 01 . 07 (`Sat`)
 2. Sub Sprint Project
     * Game 
-    * Tool
+    * ~~Tool~~
     * Calculator
     * HTML5 and JavaScript
         * Report (Github : Directory : 2Week/Report)
