@@ -8,6 +8,7 @@
 </head>
 <body>
     <section id="sec_Container">
+        <button type="button" id="LeftButton" class="page"><</button>
         <article id="atc_Calendar"></article>
         <article id="atc_Calculator">
             <div id="sec_IconBar">
@@ -25,7 +26,7 @@
                         <button type="button" id="Percent" class="Operator">%</button> <!-- % -->
                         <button type="button" id="ClearEntry" class="Operator">CE</button> <!-- CE -->
                         <button type="reset" id="Clear" class="Operator">C</button> <!-- C -->
-                        <button type="button" id="BackSpace" class="Operator">x</button> <!-- "" -->
+                        <button type="button" id="BackSpace" class="Operator">| X |</button> <!-- "" -->
                     </div>
                     <div class="Operator_Line">
                         <button type="button" id="Integral" class="Operator"><sup>1</sup>/x</button> <!-- 1/x -->
@@ -62,7 +63,11 @@
                 </div>
             </div>
         </article>
-        <article id="atc_FileDB"></article>
+        <article type="button" id="atc_FileDB" class="page">
+            <div id="FileDB_Screen">
+            </div>
+        </article>
+        <button type="button" id="RightButton">></button>
     </section>
 </body>
 </html>

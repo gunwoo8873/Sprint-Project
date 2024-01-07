@@ -1,20 +1,27 @@
 * { box-sizing: border-box; margin: 0px; }
-body { height: 100%;}
+body { height: 100%; background-color: darkblue; overflow: hidden;}
 a { text-decoration: none; }
 button { font-family: sans-serif; font-weight: 600;}
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@300;400&display=swap');
 
-#sec_Container { display: flex; justify-content: center; align-items: center; padding-top: 150px;}
+#sec_Container {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    padding-top: 150px;
+    gap: 5px;
+}
 
 #atc_Calculator {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
     border: 1px solid gray; 
-    border-radius: 5%;
+    border-radius: 5px 5px 5px 5px;
     width: 300px; 
     height: 400px;
 }
@@ -22,29 +29,39 @@ button { font-family: sans-serif; font-weight: 600;}
 #sec_IconBar { display: flex; justify-content: right; align-content: end; padding-left: 200px;}
 #sec_IconBar span { text-align: center; }
 #sec_IconBar button { background-color: white; border: none; }
-#sec_IconBar :active { background-color: gray;}
+#sec_IconBar :active { background-color: gray; }
 
 #Calculator_Box {
     display: flex; 
     flex-direction: column;
     margin: 10px;
+    background-color: white;
+    border: 1px gray solid;
     width: 250px; 
     height: 75px;
-    border: 1px gray solid;
 }
-#Formula { width: 248px; height: 75px; }
-#History { width: 248px; height: 25px; }
+
+#Formula { width: 248px; height: 75px; color: black; text-align: end;}
+#History { width: 248px; height: 25px; color: gray; text-align: end;}
 
 #Calculator_Button { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 #Calculator_Button button { width: 60px; height: 40px; border: 0.5px solid gray; border-radius: 4%;}
 
 .Operator_Line { display: flex; gap: 2px; margin: 2px; }
-.Operator_Line button { background-color: gray;}
-.Operator_Line :active { background-color: darkgray;}
+.Operator_Line button { background-color: gray; }
+.Operator_Line :active { background-color: darkgray; }
 
-.Operator_Line2  button { background-color: gray;}
-.Operator_Line2 :active { background-color: darkgray;}
+.Operator_Line2  button { background-color: gray; }
+.Operator_Line2 :active { background-color: darkgray; }
 
-#Button_Number { display: flex; flex-direction: row; gap: 2px;}
-.Number_Line, .Operator_Line2 { display: flex; flex-direction: column; gap: 2px;}
-.Number_Line :active { background-color: grey;}
+#Button_Number { display: flex; flex-direction: row; gap: 2px; }
+.Number_Line, .Operator_Line2 { display: flex; flex-direction: column; gap: 2px; }
+.Number_Line :active { background-color: grey; }
+
+#FileDB_Screen {
+    background-color: white; 
+    width: 800px; 
+    height: 400px; 
+    border-radius: 5px 5px 5px 5px; 
+    overflow: hidden;
+}
